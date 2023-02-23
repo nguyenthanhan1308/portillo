@@ -1,35 +1,82 @@
 html,
-body,
-section {
-    block-size: 100%;
+body{
+    font-family: monospace!important;
 }
 
-html {
-    scroll-snap-type: y mandatory;
-}
-
-section {
-    height: 100vh;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-section:nth-of-type(even) {
-    color: white;
-    background: black;
-}
-
-section:nth-of-type(odd) {
+a {
+    text-decoration: none;
     color: black;
-    background: white;
+}
+
+html::-webkit-scrollbar{
+    display:none;
 }
 
 body {
     margin: 0;
     font-family: system-ui, sans-serif;
     font-size: 4rem;
+}
+
+.scroll-container{
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+.scroll-child {
+    height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    padding-top: 1.5em;
+}
+
+.display_row{
+    display: flex;
+}
+
+.display_col{
+    display: flex;
+    flex-direction: column;
+}
+
+.center{
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.full_w{
+    width: 100%;
+}
+
+.gap1{
+    gap: 1em;
+}
+
+.pdh3x{
+    padding: 0 4em 0 2em;
+}
+/* animations */
+.reveal{
+    position: relative;
+    transition: 2s all ease;
+    opacity: 0;
+}
+.reveal.active{
+    opacity: 1;
+    /* animation: flyIn 1s ease 1; */
+}
+
+@keyframes flyIn {
+    from {
+        opacity: 0;
+        transform: translateY(150px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

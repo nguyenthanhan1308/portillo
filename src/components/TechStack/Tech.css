@@ -1,0 +1,13 @@
+.tech-logo{
+    height: 70px;
+    width: 70px;
+    border-radius: 20%;
+    box-shadow: 0.5px 2px 7px 0px #e8dddd;
+}
+.tech-logo img{
+    object-fit: contain;
+}
+.tech-name{
+    font-size: 0.4em;
+    letter-spacing: 0.05em;
+}
