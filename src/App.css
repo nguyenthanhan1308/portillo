@@ -2,6 +2,14 @@ html,
 body{
     font-family: monospace!important;
 }
+:root{
+    --color1: #00ADB5;
+}
+*{ 
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
 
 a {
     text-decoration: none;
@@ -20,16 +28,20 @@ body {
 
 .scroll-container{
     scroll-snap-type: y mandatory;
-    height: 100vh;
+    height: calc(100vh - 1.5em);
     overflow: auto;
     scroll-behavior: smooth;
 }
+.primary-color{
+    color: var(--color1);
+}
+.sub-color{
 
+}
 .scroll-child {
     height: 100vh;
     scroll-snap-align: start;
     scroll-snap-stop: always;
-    padding-top: 1.5em;
 }
 
 .display_row{
@@ -43,7 +55,6 @@ body {
 
 .center{
     display: flex;
-
     align-items: center;
     justify-content: center;
 }
@@ -53,11 +64,10 @@ body {
 }
 
 .gap1{
-    gap: 1em;
+    gap: 1rem;
 }
-
-.pdh3x{
-    padding: 0 4em 0 2em;
+.gap2{
+    gap: clamp(1rem, 10vw, 3rem);
 }
 /* animations */
 .reveal{
@@ -68,6 +78,12 @@ body {
 .reveal.active{
     opacity: 1;
     /* animation: flyIn 1s ease 1; */
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.gap1{
+    gap: 1rem;
 }
 
 @keyframes flyIn {

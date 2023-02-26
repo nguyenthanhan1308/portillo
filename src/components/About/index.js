@@ -1,6 +1,18 @@
+import "./About.css";
 export default function About () {
     return (
-        <>
-        </>
+        <div className="about-container display_col center">
+            <p className="about-welcome">WELCOME TO MY PORTILLO</p>
+            <h5>Hello, I'm Suns</h5>
+            <h4 className="primary-color">A Front-end Developer</h4>
+            <p className="about-me">
+                Fond of optimizing front-end and learning new things.
+            </p>
+            <div className="display_row about-nav">
+                <a href="https://github.com/nguyenthanhan1308" target="_blank" rel="noreferrer">
+                    <img src="github.png" alt="githubLogo" />
+                </a>
+            </div>
+        </div>
     )
 }

@@ -1,13 +1,24 @@
+.tech-container{
+    
+}
+
+.tech-stack{
+    gap: 1rem;
+    flex: 1 1 120px;
+}
+
 .tech-logo{
-    height: 70px;
-    width: 70px;
-    border-radius: 20%;
+    height: clamp(3rem, 20vw, 4rem);
+    width: clamp(3rem, 20vw, 4rem);
+    border-radius: 15%;
     box-shadow: 0.5px 2px 7px 0px #e8dddd;
 }
 .tech-logo img{
     object-fit: contain;
+    aspect-ratio: 1/1;
+    width: clamp(1.5rem, 10vw, 2.5rem);
 }
 .tech-name{
-    font-size: 0.4em;
+    font-size: clamp(0.2em, 5vw, 0.4em);
     letter-spacing: 0.05em;
 }
