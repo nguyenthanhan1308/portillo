@@ -2,14 +2,14 @@ import { projectsData } from "../../data/Projects";
 import "./Project.css";
 export default function Project() {
     return (
-        <div className="display_col center">
-            <h6>PROJECTS</h6>
-            <div className="project-container display_row wrap gap2">
+        <div className="display_col center gap2">
+            <h6 className="primary-color">PROJECTS</h6>
+            <div className="display_row wrap gap2 center">
                 {projectsData.map((project,i) => {
                     return(
-                        <div key={i} className="project-card display_col wrap">
+                        <div key={i} className="project-card display_col wrap center">
                             <img src={project?.thumb} alt={`project-thumb-${i}`} className="project-thumb" />
-                            <h5>{project.name}</h5>
+                            <a target="_blank" rel="noreferrer" href={project?.url} className="project-nav">{project.name}</a>
                         </div>
                     )
                 })}

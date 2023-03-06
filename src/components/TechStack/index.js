@@ -2,8 +2,8 @@ import "./Tech.css";
 
 export default function Tech () {
     return (
-        <div className="tech-container display_col center">
-            <h4 className="primary-color">SKILLS | TECH STACKS</h4>
+        <div className="display_col center gap2">
+            <h6 className="primary-color">SKILLS | TECH STACKS</h6>
             <div className="display_row center gap2 wrap">
                 <div className="tech-stack display_row center">
                     <div className="tech-logo center">

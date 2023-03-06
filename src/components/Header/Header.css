@@ -1,12 +1,17 @@
 .header-container{
-    font-size: clamp(0.5rem, 5vw, 1.5rem);
     height: 5rem;
     background-color: white;
     box-shadow: 0px -4px 7px 2px #a39a9a;
     align-items: center;
     justify-content: space-between;
-    padding: 0 clamp(0.5rem, 5vw, 1rem);
+    padding: 0 clamp(2rem, 5vw, 2.2rem);
 }
 .header-container img{
     height: clamp(1rem, 10vw, 4rem);
+}
+.nav-link{
+    font-weight: 100;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-size: clamp(0.5rem, 5vw, 1.2rem);
 }
