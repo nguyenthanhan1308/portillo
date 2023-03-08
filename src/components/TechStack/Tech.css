@@ -1,23 +1,20 @@
-.tech-container{
-}
-
 .tech-stack{
     gap: 1rem;
     flex: 1 1 20%;
 }
 
 .tech-logo{
-    height: clamp(3rem, 20vw, 5rem);
-    width: clamp(3rem, 20vw, 5rem);
+    height: clamp(3rem, 3rem + 2.5vw, 5rem);
+    width: clamp(3rem, 3rem + 2.5vw, 5rem);
     border-radius: 15%;
     box-shadow: 0.5px 2px 7px 0px #e8dddd;
 }
 .tech-logo img{
     object-fit: contain;
     aspect-ratio: 1/1;
-    width: clamp(1.5rem, 15vw, 3rem);
+    width: clamp(1.5rem, 1.5rem + 2.5vw, 3rem);
 }
 .tech-name{
-    font-size: clamp(0.2em, 5vw, 0.4em);
-    letter-spacing: 0.05em;
+    font-size: clamp(0.8rem, 1cqw + 0.8rem, 1.5rem);
+    letter-spacing: 0.08em;
 }

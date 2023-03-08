@@ -5,6 +5,7 @@ body{
 }
 :root{
     --color1: #00ADB5;
+    --color2: rgb(247, 177, 46);
 }
 *{ 
     margin: 0;
@@ -24,7 +25,7 @@ html::-webkit-scrollbar{
 body {
     margin: 0;
     font-family: system-ui, sans-serif;
-    font-size: 4rem;
+    font-size: clamp(0.8rem, 0.5rem + 2.5vw, 3rem);
 }
 
 .scroll-container{

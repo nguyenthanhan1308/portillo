@@ -1,0 +1,16 @@
+.project-card{
+    box-shadow: 0.5px 2px 7px 0px #e8dddd;
+    border-radius: 0.5rem;
+    gap: 1rem;
+    box-sizing: content-box;
+    padding-bottom: 1rem;
+}
+.project-nav{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+.project-thumb{
+    border-radius: 0.5rem;
+    aspect-ratio: 16/9;
+    width: clamp(20rem, 35vw, 50rem);
+}

@@ -1,0 +1,12 @@
+.about-container p{
+    font-size: clamp(0.8rem, 1cqw + 0.8rem, 1.5rem);
+}
+
+.about-container *{
+    margin: 0;
+    padding: 1rem 0;
+}
+.about-nav img{
+    aspect-ratio: 1/1;
+    height: 2rem;
+}

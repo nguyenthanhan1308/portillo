@@ -3,7 +3,7 @@ import "./Project.css";
 export default function Project() {
     return (
         <div className="display_col center gap2">
-            <h6 className="primary-color">PROJECTS</h6>
+            <h2 className="primary-color">PROJECTS</h2>
             <div className="display_row wrap gap2 center">
                 {projectsData.map((project,i) => {
                     return(

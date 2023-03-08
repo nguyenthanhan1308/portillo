@@ -3,8 +3,8 @@ export default function About () {
     return (
         <div className="about-container display_col center">
             <p className="about-welcome">WELCOME TO MY PORTILLO</p>
-            <h5>Hello, I'm Suns</h5>
-            <h4 className="primary-color">A Front-end Developer</h4>
+            <h3 className="sub-color">Hello, I'm Suns</h3>
+            <h2 className="primary-color">A Front-end Developer</h2>
             <p className="about-me">
                 Fond of optimizing front-end and learning new things.
             </p>
