@@ -9,9 +9,20 @@
 .header-container img{
     height: clamp(1rem, 10vw, 4rem);
 }
+.nav-container{
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    background-color: white;
+    width: 30vw;
+    border: 1px solid black;
+}
 .nav-link{
     font-weight: 100;
     letter-spacing: 0.2rem;
     text-transform: uppercase;
     font-size: clamp(0.5rem, 5vw, 1.2rem);
+}
+.hide{
+    display: none;
 }
