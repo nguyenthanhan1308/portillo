@@ -1,5 +1,5 @@
 .project-card{
-    box-shadow: 0.5px 2px 7px 0px #e8dddd;
+    box-shadow: var(--boxShadow);
     border-radius: 0.5rem;
     gap: 1rem;
     box-sizing: content-box;

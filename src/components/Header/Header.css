@@ -1,11 +1,11 @@
 .header-container{
     height: 5rem;
     background-color: white;
-    box-shadow: 0px -4px 7px 2px #a39a9a;
     align-items: center;
     justify-content: space-between;
     padding: 0 clamp(2rem, 5vw, 2.2rem);
     container-type: inline-size;
+    box-shadow: var(--boxShadow);
 }
 .header-container img{
     height: clamp(1rem, 10vw, 4rem);
@@ -13,15 +13,30 @@
 .nav-container{
     display: flex;
 }
+.nav-button{
+    visibility: hidden;
+}
 @container (max-width: 768px) {
     .nav-container{
+        padding-top: 2rem;
         flex-direction: column;
         position: absolute;
         top: 0;
-        right: 1rem;
+        right: 0;
         background-color: white;
         width: 30vw;
-        border: 1px solid black;
+        height: 100vh;
+        box-shadow: var(--boxShadow);
+        transition: width 1s ease;
+    }
+    .nav-link{
+        padding-bottom: 2rem;
+    }
+    .nav-link{
+        border-bottom: 0.1rem solid var(--color1);
+    }
+    .nav-button{
+        visibility: visible;
     }
 }
 
