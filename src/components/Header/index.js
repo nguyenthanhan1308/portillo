@@ -2,7 +2,8 @@ import {useState} from "react";
 import "./Header.css";
 import {MenuOutlined} from "@ant-design/icons"
 export default function Header () {
-    const [isOpenNav, setIsOpenNav] = useState(false);
+    const windowWidth =  window?.innerWidth;
+    const [isOpenNav, setIsOpenNav] = useState(!!(windowWidth > 768));
     
     const onOpenNav = () => setIsOpenNav(true);
     const onCloseNav = () => setIsOpenNav(false);
