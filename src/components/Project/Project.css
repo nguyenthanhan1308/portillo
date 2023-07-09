@@ -5,6 +5,15 @@
     box-sizing: content-box;
     padding-bottom: 1rem;
 }
+
+.project-list{
+    height: 360px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
 .project-nav{
     font-size: 1.4rem;
     text-transform: uppercase;

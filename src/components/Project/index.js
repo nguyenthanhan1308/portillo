@@ -4,7 +4,7 @@ export default function Project() {
     return (
         <div id="projects" className="display_col center gap2">
             <h2 className="primary-color">PROJECTS</h2>
-            <div className="display_row wrap gap2 center">
+            <div className="project-list display_row wrap gap2 center">
                 {projectsData.map((project,i) => {
                     return(
                         <div key={i} className="project-card display_col wrap center">

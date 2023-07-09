@@ -12,6 +12,13 @@ const projectsData = [{
     description: "A website for listening to music, reading books and watching stream",
     tech: ["next", "node", "tailwind"],
     deployment: ["vercel", "heroku"]
+}, {
+    url: "https://hulu-clone-eight-phi.vercel.app/",
+    thumb: "hulu.png",
+    name: "Hulu clone",
+    description: "Hulu Clone which I followed an online tutorial on Youtube, first website I made using NextJs",
+    tech: ["next", "node", "tailwind"],
+    deployment: ["vercel", "heroku"]
 }
 ]
 export {projectsData};
